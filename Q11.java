@@ -11,7 +11,7 @@ package Assignment;
  */
 
 public class Q11 {
-    static void aex(){
+    static void ArithmeticEx(){
         try {
             int a=0;
             if(a==0){
@@ -21,7 +21,7 @@ public class Q11 {
             System.out.println(e);
         }
         }
-    static void npex(){
+    static void NullPointerEx(){
             String a=null;
         try {
             if ("one".equals(a)){
@@ -32,7 +32,7 @@ public class Q11 {
             System.out.println(e);
         }
     }
-    static void aobex(){
+    static void ArrayOutOfBoundsEx(){
         try {
             int[] myNumbers={1,1,22};
             System.out.println(myNumbers[10]);
@@ -40,7 +40,7 @@ public class Q11 {
             System.out.println(e);
         }
     }
-    static void sobex(){
+    static void StringOutOfBoundsEx(){
         try {
             String s="12924938249";
             System.out.println(s.charAt(49));
@@ -48,7 +48,7 @@ public class Q11 {
             System.out.println(e);
         }
     }
-    static void nfex(){
+    static void NumberFormatEx(){
         String s="223.55";
         try {
             int a=Integer.parseInt(s);
@@ -57,10 +57,10 @@ public class Q11 {
         }
     }
     public static void main(String[] args) {
-        aex();
-        npex();
-        aobex();
-        sobex();
-        nfex();
+        ArithmeticEx();
+        NullPointerEx();
+        ArrayOutOfBoundsEx();
+        StringOutOfBoundsEx();
+        NumberFormatEx();
     }
 }

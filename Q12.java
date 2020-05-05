@@ -9,7 +9,7 @@ import java.util.Random;
  *
  * @author Ankur
  */
-class Multi extends Thread{
+class NumberSort extends Thread{
     Random rand=new Random();
     @Override
     public void run(){
@@ -39,9 +39,9 @@ class Multi extends Thread{
 }
 public class Q12 {
     public static void main(String[] args) {
-        Multi t1=new Multi();
-        Multi t2=new Multi();
-        Multi t3=new Multi();
+        NumberSort t1=new NumberSort();
+        NumberSort t2=new NumberSort();
+        NumberSort t3=new NumberSort();
         t1.start();
         t2.start();
         t3.start();

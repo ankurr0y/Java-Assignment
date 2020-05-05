@@ -9,7 +9,7 @@ package Assignment;
  *
  * @author Ankur
  */
-class sample{
+class Sample{
     int a=5;
     int geta(){
         return a;
@@ -17,7 +17,7 @@ class sample{
 }
 public class Q5 {
     public static void main(String[] args) {
-        sample s=new sample();
+        Sample s=new Sample();
         System.out.println(s.geta());
     }
 }
